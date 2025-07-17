@@ -1,4 +1,4 @@
 <main class="fill-viewport">
-  <router-outlet />
-  <app-map class="fill-viewport"></app-map>
+  <app-header [wkt]="wkt()" class="header-layout"></app-header>
+  <app-map (newWkt)="onNewWkt($event)" class="map-layout"></app-map>
 </main>

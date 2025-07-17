@@ -1,1 +1,5 @@
+$header-height: 100px;
 
+.map-layout {
+  height: calc(100vh - $header-height);
+}
